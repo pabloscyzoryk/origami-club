@@ -1,0 +1,26 @@
+/* base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+*::selection:not(footer *) {
+  background-color: #ffcc5c;
+  color: white;
+}
+
+/* styling */
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

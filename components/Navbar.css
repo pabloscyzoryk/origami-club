@@ -1,0 +1,7 @@
+.navbar {
+  z-index: 2000;
+  position: fixed;
+  width: 100vw;
+
+  transition: ease-in-out .2s;
+}

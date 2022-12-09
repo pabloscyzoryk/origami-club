@@ -1,0 +1,12 @@
+.susimg {
+    position: relative;
+    animation: bieg 5s linear 2s infinite alternate;
+}
+
+@keyframes bieg {
+    0%   {left:0%; top:0%;}
+    25%  {left:30%; top:0px;}
+    50%  {left:50%; top:0px;}
+    75%  {left:70%; top:0px;}
+    100% {left:100%; top:0px;}
+} 

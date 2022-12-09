@@ -1,0 +1,103 @@
+.create-wrapper {
+  width: 100vw;
+  position: absolute;
+  top: 75px;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5vw;
+}
+
+#desc {
+  height: 3em;
+}
+
+.create-wrapper input[type="text"],
+.create-wrapper textarea {
+  width: 50vw;
+  min-width: 250px;
+}
+
+.create-wrapper span {
+  font-family: "Poppins", sans-serif;
+}
+
+.create-thumbnail {
+  background-size: 100% 100%;
+  width: 300px;
+  height: 175px;
+  cursor: pointer;
+}
+
+.project-step {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.project-step b {
+  font-family: "Poppins", sans-serf;
+  font-size: 2em;
+}
+
+.project-step-trash {
+  color: #555;
+  position: relative;
+  left: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.create-wrapper span {
+  margin-top: 5px;
+}
+
+.create-menu {
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.create-menu #new-btn {
+  color: white;
+  background-color: #ffcc5c;
+  width: 45px;
+  aspect-ratio: 1.25 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-menu .create-publish {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffcc5c;
+  color: white;
+  width: 10em;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (width < 540px) {
+  .create-menu {
+    width: 100vw;
+  }
+  .project-step-trash {
+    left: 70%;
+  }
+}
+
+@media (width < 380px) {
+  .project-step-trash {
+    left: 80%;
+  }
+}

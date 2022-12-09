@@ -1,0 +1,32 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+.quote-author {
+  font-family: "Arvo", serif;
+  color: rgb(40, 40, 40);
+  position: relative;
+  top: 10px;
+}
+
+.quote-box {
+  max-width: 90vw;
+  width: 300px;
+}
+
+.quote-body {
+  position: relative;
+  top: 25px;
+}
+
+.quote {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.6em;
+}
+
+/* media queries */
+@media (width < 500px) {
+  .quote-author {
+    top: 5px;
+  }
+}

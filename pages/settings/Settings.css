@@ -1,0 +1,87 @@
+.settings-wrapper {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 10vh;
+  width: 100vw;
+  display: flex;
+  gap: 5vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.settings-h {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.settings-bg {
+  width: 30vw;
+  min-width: 275px;
+  aspect-ratio: 3/1;
+}
+
+.bg-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.bg-arrow {
+  background-color: #ffcc5c;
+  padding: 0.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 900px;
+}
+
+.settings-avatar {
+  border-radius: 900px;
+  aspect-ratio: 1/1;
+  width: 11vw;
+  min-width: 80px;
+  top: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sus {
+  top: 5px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.save-profile-btn {
+  background-color: #ffcc5c;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  color: white;
+  padding: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.pure-blank {
+  width: 100vw;
+  height: 2vh;
+}
+
+.sus[type="file"] {
+  border: 1px solid #555;
+  padding: 5px;
+  border-radius: 5px;
+}

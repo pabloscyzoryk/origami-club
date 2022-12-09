@@ -1,0 +1,426 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+/* styling */
+
+/* hero */
+.hero-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.hero-image {
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.5vw;
+}
+
+/* little dot for h1 tag */
+.hero-text h1::after {
+  width: 1vw;
+  height: 2vw;
+  background-color: #fdb70d; /* od Pana Marka Walicy, pozdrawiam */
+
+  display: inline-block;
+  content: "";
+  margin-left: 2px;
+  position: absolute;
+  top: 63.5%;
+
+  animation: grow-width 0.25s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow-width {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(2.5);
+    transform-origin: bottom left;
+  }
+}
+
+.hero-text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+
+  transform: translateY(-95%);
+}
+
+/* p tag between lines */
+
+.hero-text p {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-text p::before,
+.hero-text p::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 0.5vw solid;
+  margin: auto;
+  max-width: 10%;
+}
+
+.hero-text p::before {
+  margin-right: 10px;
+}
+
+.hero-text p::after {
+  margin-left: 10px;
+}
+
+.hero-text {
+  pointer-events: none;
+}
+
+.hero-show-more {
+  text-align: center;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s ease-out;
+  z-index: 1;
+  padding: 5px;
+  width: 12.5vw;
+  min-width: 200px;
+  height: 5vh;
+
+  border: 3px dashed black;
+  border-radius: 900px;
+}
+
+.hero-show-more p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5vh;
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;
+  bottom: 0.5vh;
+}
+
+/* how to start? - about */
+.back {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+
+  position: relative;
+  top: 100vh;
+  z-index: 500;
+
+  background-color: white;
+}
+
+.back2 {
+  height: 80vh;
+  width: 100vw;
+  max-width: 100vw;
+
+  position: relative;
+  top: 100vh;
+  z-index: 500;
+
+  background-color: white;
+}
+
+section.how-to-start {
+  width: auto !important;
+}
+
+.small-back {
+  height: 0vh;
+  width: 100vw;
+  max-width: 100vw;
+
+  position: relative;
+  top: 100vh;
+  z-index: 500;
+
+  background-color: white;
+}
+
+.sm-back {
+  height: 70vh;
+  width: 100vw;
+  max-width: 100vw;
+
+  position: relative;
+  top: 100vh;
+  z-index: 500;
+
+  background-color: white;
+}
+
+.how-to-start h2,
+.contact h3 {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+}
+
+.how-to-start .ship {
+  position: absolute;
+  top: 52.5%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 5000;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  width: 231px;
+  height: 161px;
+}
+
+/* card dots */
+.dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 20px;
+  background-color: #ffcc5c;
+  border-radius: 900px;
+}
+
+/* quotes section */
+.quotes-container {
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+  width: 100vw;
+  bottom: 55px;
+}
+
+.numbers-wrapper {
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 2000;
+}
+
+.numbers-wrapper div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers-wrapper div p:nth-child(1) {
+  color: white;
+  font-family: "Poppins";
+  font-size: 3em;
+}
+
+.numbers-wrapper div p:nth-child(2) {
+  color: white;
+  font-family: "JetBrains Mono";
+  font-size: 4.5em;
+  font-weight: 900;
+}
+
+/* footer */
+footer {
+  height: 75px;
+  width: 100vw;
+
+  background-color: #161b22;
+  color: #c9d1d9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 150px;
+}
+
+footer ul {
+  display: flex;
+  max-width: 50%;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+footer li {
+  cursor: pointer;
+}
+
+footer ul:nth-child(1) {
+  font-size: 0.8em;
+  gap: 20px;
+}
+
+footer ul:nth-child(1) li:hover {
+  text-decoration: underline;
+}
+
+footer ul:nth-child(1) li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer ul:nth-child(2) {
+  gap: 15px;
+  font-size: 1.3em;
+}
+
+section.quotes {
+  height: 100vh;
+}
+
+/* media queries */
+@media (width < 500px) {
+  .numbers-wrapper div p:nth-child(1) {
+    font-size: 2em;
+  }
+
+  .numbers-wrapper div p:nth-child(2) {
+    font-size: 3em;
+  }
+
+  .how-to-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 175vh;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 50px;
+
+    width: 100vw;
+    
+  }
+
+  .how-to-start h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    font-size: 2em;
+    width: 80vw;
+  }
+
+  .quotes-container {
+    top: 150px;
+  }
+
+  .quotes-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    top: 10px;
+  }
+
+  section.quotes {
+    height: 200vh;
+  }
+
+  section.contact {
+    height: 120vh;
+  }
+
+  footer {
+    top: -10vh;
+    height: 60vh;
+    max-width: 100%;
+  }
+
+  footer ul {
+    flex-direction: column;
+    position: relative;
+    bottom: 10vh;
+  }
+
+  .quotes-container {
+    gap: 15vh;
+  }
+}
+
+@media (width <= 960px) and (width > 500px) {
+  .how-to-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
+
+  .how-to-start h2 {
+    font-size: 2em;
+  }
+
+  .ship {
+    display: none;
+  }
+
+  section.quotes {
+    top: 100vh;
+  }
+
+  .quotes-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
